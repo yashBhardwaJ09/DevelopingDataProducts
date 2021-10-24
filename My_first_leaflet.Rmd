@@ -1,0 +1,23 @@
+---
+title: "DDP (Week2)"
+author: "Yashwant Bhardwaj"
+date: "24/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+This is my first leaflet
+
+```{r cars}
+library(leaflet)
+map_of_home <- leaflet() %>%
+  addTiles() %>%
+addMarkers(lat=20.5579, lng=74.5089, popup = "Home Address")
+
+map_of_home
+```
+
